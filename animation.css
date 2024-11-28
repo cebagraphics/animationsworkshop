@@ -1,0 +1,28 @@
+/* CSS for paddleanimation.html */
+body {
+    background-color:#F4F7F2
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: ivystyle-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    text-align: center;
+}
+
+.sprite {
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background: url('paddle-animation-01.webp') 0 0 no-repeat;
+    animation: play 3s steps(11) infinite;
+}
+@keyframes play {
+    0%{background-position:0px;}
+   100% { background-position: -6600px; }
+}
